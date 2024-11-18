@@ -1,0 +1,63 @@
+Changelog for Part 3: Polishing and Last Features.
+
+Changes Made
+Implemented Feedback from Part 2:
+
+-Fixed scrolling issues by wrapping the HomeScreen content in a ScrollView.
+Resolved error with reduce by ensuring the price is parsed and handled correctly as a number.
+
+Refactored Code:
+Separated functionality into reusable functions:
+calculateAveragePrices for computing average prices for each course.
+Organized files into modular components for better maintainability.
+Updated App.tsx to use proper navigation between the Home and Add Item screens.
+
+-Styling Improvements:
+Added basic styles for a cleaner and more user-friendly interface.
+Created a card style for menu items to visually separate them.
+Improved font sizes and layout consistency.
+
+Features Added:
+Predefined Courses:
+Added default menu items (starters, mains, desserts) on the home screen to provide initial data for users.
+New "Add Menu Item" Screen:
+
+Moved the "Add Menu Item" feature to a separate screen for better UI and navigation flow.
+Enabled the chef to add new menu items to the list dynamically.
+Delete Functionality:
+
+Enabled the chef to remove items from the menu directly from the "Add Menu Item" screen.
+Filter by Course Screen:
+
+Added a new screen that allows users to filter menu items by course (e.g., starters, mains, desserts).
+Displayed only the selected course items on the filter screen.
+Average Price Display:
+
+Calculated and displayed the average price for each course in Rands on the home screen.
+
+Enhancements:
+Improved Navigation:
+
+Used React Navigation to provide seamless transitions between screens:
+Home Screen
+Add Menu Item Screen
+Filter by Course Screen
+
+Dynamic Data Handling:
+Ensured menu items are stored in an array that updates in real-time.
+Improved logic for calculating the total number of menu items and average prices.
+
+Scroll Functionality:
+Fixed scrolling issue by wrapping the main content of HomeScreen in a ScrollView.
+Ensured the layout adjusts correctly to allow scrolling regardless of the number of menu items.
+
+Summary of Changes
+Predefined Courses:	Added default menu items (starters, mains, desserts) to the Home Screen.
+Add Menu Item Screen:	Moved the "Add Menu Item" functionality to a separate screen.
+Delete Menu Items:	Enabled deletion of menu items directly from the "Add Menu Item" screen.
+Filter by Course:	Added a separate screen to filter items by course (e.g., starters, mains).
+Average Price Calculation:	Displayed average price for each course in Rands on the Home Screen.
+UI Styling:	Enhanced UI with consistent and clean styling for better user experience.
+Fixed Scroll Issues:	Ensured all screens support scrolling for large datasets.
+Modularized Code:	Split functionality into reusable functions and improved code structure.
+Navigation:	Integrated React Navigation for better screen transitions.
